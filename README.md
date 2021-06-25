@@ -8,8 +8,7 @@ AI 服裝標籤自動化: 運用fastai套件與resnet-34訓練標籤辨識model�
 ## Datasets
 
 - 圖片資料集cvat_picture: 聯絡台大商業智慧實驗室獲得圖片資料，下載後放入同位置cvat_picture
-- recog_traning 相關資料集: 存放在model_train_data，此資料集為尚未進行自動化標籤之原始資料集
-- clothing_tags_complete(HSL).csv: 存放在tag_data，此資料集為已完成自動化標籤之資料集，v_search.py 和 s_search.py 使用 
+- 其他資料集:下載後將資料集放入相同名稱目錄
 
 
 ## Models
