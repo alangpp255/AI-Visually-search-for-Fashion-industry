@@ -1,0 +1,11 @@
+python3
+fuzzy_match
+fuzzywuzzy
+jieba
+argparse
+logging
+re
+csv
+pandas
+cv2
+numpy
