@@ -9,3 +9,9 @@ csv
 pandas
 cv2
 numpy
+PIL
+matplotlib
+ColorThief
+os
+fastai
+sklearn
