@@ -27,3 +27,5 @@ AI 服裝標籤自動化: 運用fastai套件與resnet-34訓練標籤辨識model�
 
 2. 以圖搜圖 v_search 
 3. 文字搜索 s_search
+- 使用方式：呼叫s_search函式，並依序傳入{欲搜尋之文字、文字與圖片檔對應之data frame、希望合併的搜尋結果}作為函式之參數
+- 以此利用S_seach.py 操作model 進行文字搜索
