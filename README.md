@@ -26,6 +26,10 @@ AI 服裝標籤自動化: 運用fastai套件與resnet-34訓練標籤辨識model�
 - 使用tag_pred.py 操作model 進行自動化標籤
 
 2. 以圖搜圖 v_search 
+- Input: Image local path
+- 使用V_search.py進行Input image的顏色分析與圖像相似度計算
+- 最終依照顏色篩選結果與圖形相似度由近至遠排序，回傳資料庫圖片path
+
 3. 文字搜索 s_search
 - 使用方式：呼叫s_search函式，並依序傳入{欲搜尋之文字、文字與圖片檔對應之data frame、希望合併的搜尋結果}作為函式之參數
-- 以此利用S_seach.py 操作model 進行文字搜索
+- 以此利用S_search.py 操作model 進行文字搜索
