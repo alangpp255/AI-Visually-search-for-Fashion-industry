@@ -1,4 +1,4 @@
-# 自動化標籤與圖文搜索推薦
+# Automated tag and image search recommendations
 
 程式主要分為三個部分
 AI 服裝標籤自動化: 運用fastai套件與resnet-34訓練標籤辨識model，可辨識服裝種類(category)和服裝樣式(pattern)
@@ -21,21 +21,21 @@ Text search: support Chinese and English and fuzzy matching, and add clothing ke
 - fastai_pattern.pkl: Used for clothing pattern recognition
 - All the models trained with Resnet34 backbone
 
-## 使用
-事前準備: 
-取得cvat_picture圖片資料集，下載後放入同位置cvat_picture
-下載資料集，將其放入相同名稱目錄
+## Usage使用
+Preparation: 
+Get the cvat_picture image data set, download it and put it in the same location as cvat_picture
+Download the dataset, put it into a directory of the same name
 1. AI clothing label automation
-- category_recog_training/fashion-category-recognition.ipynb 用於訓練category model
-- pattern_recog_training/fashion-pattern-recognition.ipynb 用於訓練pattern model
-- 使用tag_pred.py 操作model 進行自動化標籤
+- category_recog_training/fashion-category-recognition.ipynb : to train category model
+- pattern_recog_training/fashion-pattern-recognition.ipynb : to train pattern model
+- Use tag_pred.py to operate the model for automated tagging
 
 2. Visual Search Model v_search 
 - Input: Image local path
-- 使用V_search.py進行Input image的顏色分析與圖像相似度計算
-- 最終依照顏色篩選結果與圖形相似度由近至遠排序，回傳資料庫圖片path
-- (以上可使用Color detection and similarity ranking with perceptual hash algorithm 中的ipynb操作更清楚)
+- Use V_search.py for Input image color analysis and image similarity calculation
+- Finally, sort the results from near to far according to the similarity between the color filtering results and the graphics, and return the database image path.
+- (The above process can be realise more clearly using the ipynb in Color detection and similarity ranking with perceptual hash algorithm)
 
 3. Text search s_search
-- 使用方式：呼叫s_search函式，並依序傳入{欲搜尋之文字、文字與圖片檔對應之data frame、希望合併的搜尋結果}作為函式之參數
-- 以此利用S_search.py 操作model 進行文字搜索
+- How to use: Call the s_search function, and sequentially pass in {the text to be searched, the data frame corresponding to the text and image files, the search results you want to combine} as the parameters of the function
+- In this way, use S_search.py to operate the model for text search
